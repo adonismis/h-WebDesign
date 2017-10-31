@@ -37,7 +37,7 @@
             < h3>....< /h3>
             < p>...< /p>
     * 於container外層增加 session 將底色改掉、換白字色及內距向內推
-      section.bg-info.py-5.text-white 
+      section.bg-info.py-5.text-white
 
 4. 使用格線做混合式排版
 
