@@ -18,8 +18,8 @@
     * 改用背景圖 style="background-image: url(...)"
     * 於carousel-item 再增加 bg-cover
     * bg-cover{background-size: cover;background-position:center center;}
-    * 增加文字描述(但字顏色容易不明顯)
-    * <div class="corousel-caption d-none d-md-block px-3"><h3>...></h3></div>
+    * 增加文字描述(但字顏色容易不明顯)  
+    * < div class="corousel-caption d-none d-md-block px-3"><h3>...></h3></div >
     * 於文字底增加底色 .carousel-caption{background-color:rgba(0,0,0,.6)}
 
 3. 常見的三欄式排版
