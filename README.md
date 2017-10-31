@@ -22,7 +22,7 @@
     * <div class="corousel-caption d-none d-md-block px-3"><h3>...></h3></div>
     * 於文字底增加底色 .carousel-caption{background-color:rgba(0,0,0,.6)}
 
-3. 常見的三欄式排版 
+3. 常見的三欄式排版
     * .container>.row>
         .col-md-4
             .mb-2 < i class="fa...>< /i>
@@ -37,7 +37,7 @@
             < h3>....< /h3>
             < p>...< /p>
     * 於container外層增加 session 將底色改掉、換白字色及內距向內推
-      section.bg-info.py-5.text-white
+      section.bg-info.py-5.text-white 
 
 4. 使用格線做混合式排版
 
