@@ -11,6 +11,16 @@
     * Navbar 上方增加灰底並加入兩個白色社群按鈕 .bg-secondary.py-1>.container >( <a href="#" class="text-white"><i class="fa ..></i></a> <a href="#" class="text-white"><i class="fa ..></i></a> )
 
 2. 製作滿版的背景圖及文字輪播
+    * Components > carousel 找語法
+    * 用header包起來
+    * 於carousel-item 增加 header-carousel-item
+    * .header-carousel-item{height:450px;}
+    * 改用背景圖 style="background-image: url(...)"
+    * 於carousel-item 再增加 bg-cover
+    * bg-cover{background-size: cover;background-position:center center;}
+    * 增加文字描述(但字顏色容易不明顯)
+    * <div class="corousel-caption d-none d-md-block px-3"><h3>...></h3></div>
+    * 於文字底增加底色 .carousel-caption{background-color:rgba(0,0,0,.6)}
 
 3. 常見的三欄式排版
 
@@ -25,3 +35,4 @@
 8. 格線系統及背景效果
 
 9. 網頁中不同 Modal 互相切換的手法
+
