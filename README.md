@@ -36,6 +36,7 @@
     </style>
     ```
 * 增加文字描述，但字顏色容易不明顯，故增
+
     ```
     <div class="corousel-caption d-none d-md-block px-3">
         <h3>...  </h3 >
@@ -47,6 +48,7 @@
 注意事項：
 * 於container外層增加 session 將底色改掉、換白字色及內距向內推
       section.bg-info.py-5.text-white
+      
 ```
      .container>.row>
         .col-md-4
