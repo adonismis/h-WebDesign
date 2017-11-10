@@ -5,12 +5,13 @@
 
 ## 1. Navbar 實作
 
-    * 複製 Navbar 語法 [Navbar](https://getbootstrap.com/docs/4.0/components/navbar/)
-    * 改 Navbar 顏色：改class navbar-dark bg-dark
-    * 將 a.navbar-brand標題換為img並設定高度寬度
-    * 改選單文字並於form-inline增加登入、註冊( .btn.btn-outline-primary.mr-1 登入    .btn.btn-primary 註冊)
-    * btn 寬度增加 .btn{ border-width: 2px;}
-    * Navbar 上方增加灰底並加入兩個白色社群按鈕 
+注意事項：   
+* 複製 Navbar 語法 [Navbar](https://getbootstrap.com/docs/4.0/components/navbar/)
+* 改 Navbar 顏色：改class navbar-dark bg-dark
+* 將 a.navbar-brand標題換為img並設定高度寬度
+* 改選單文字並於form-inline增加登入、註冊( .btn.btn-outline-primary.mr-1 登入    .btn.btn-primary 註冊)
+* btn 寬度增加 .btn{ border-width: 2px;}
+* Navbar 上方增加灰底並加入兩個白色社群按鈕 
     
     ```
     .bg-secondary.py-1
@@ -21,12 +22,12 @@
 ## 2. 製作滿版的背景圖及文字輪播
 
 注意事項：
-    * Components > carousel 找語法
-    * 用header包起來
-    * 於carousel-item 增加 header-carousel-item
-    * 改用背景圖 style="background-image: url(...)"
-    * 於carousel-item 再增加 bg-cover
-    * 於文字底增加底色 .carousel-caption{background-color:rgba(0,0,0,.6)}
+* Components > carousel 找語法
+* 用header包起來
+* 於carousel-item 增加 header-carousel-item
+* 改用背景圖 style="background-image: url(...)"
+* 於carousel-item 再增加 bg-cover
+* 於文字底增加底色 .carousel-caption{background-color:rgba(0,0,0,.6)}
 
     ```
     <style>
@@ -34,7 +35,7 @@
         .bg-cover{background-size: cover;background-position:center center;}
     </style>
     ```
-    * 增加文字描述，但字顏色容易不明顯，故增
+* 增加文字描述，但字顏色容易不明顯，故增
     ```
     <div class="corousel-caption d-none d-md-block px-3">
         <h3>...  </h3 >
@@ -65,10 +66,10 @@
 ## 4. 使用格線做混合式排版
 
 注意事項：
- * section 增加 style="position:relative"
- * row > col-md-5 增 style="position:absolute;top:0;bottom:0;background-image:url(..)"
- * 增container>row>col-md-7 
- * row 增 justify-content-end 並增 text-md-dark
+* section 增加 style="position:relative"
+* row > col-md-5 增 style="position:absolute;top:0;bottom:0;background-image:url(..)"
+* 增container>row>col-md-7 
+* row 增 justify-content-end 並增 text-md-dark
 
 ```
     <style>
@@ -103,7 +104,6 @@
         </div>
     </section>
 ```
-
 
 ## 5. 充滿自由的 Flex 排版
 
