@@ -13,11 +13,11 @@
 * btn 寬度增加 .btn{ border-width: 2px;}
 * Navbar 上方增加灰底並加入兩個白色社群按鈕 
     
-    ```
+```
     .bg-secondary.py-1
         .container 
             ( <a href="#" class="text-white"><i class="fa ..></i></a> <a href="#" class="text-white"><i class="fa ..></i></a> )
-    ```
+```
 
 ## 2. 製作滿版的背景圖及文字輪播
 
@@ -48,7 +48,7 @@
 注意事項：
 * 於container外層增加 session 將底色改掉、換白字色及內距向內推
       section.bg-info.py-5.text-white
-      
+
 ```
      .container>.row>
         .col-md-4
