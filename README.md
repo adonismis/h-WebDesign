@@ -20,11 +20,14 @@
 
 ## 2. 製作滿版的背景圖及文字輪播
 
+注意事項：
     * Components > carousel 找語法
     * 用header包起來
     * 於carousel-item 增加 header-carousel-item
     * 改用背景圖 style="background-image: url(...)"
     * 於carousel-item 再增加 bg-cover
+    * 於文字底增加底色 .carousel-caption{background-color:rgba(0,0,0,.6)}
+
     ```
     <style>
         .header-carousel-item{height:450px;}
@@ -37,10 +40,12 @@
         <h3>...  </h3 >
     </div>
     ```
-    
-    * 於文字底增加底色 .carousel-caption{background-color:rgba(0,0,0,.6)}
 
 ## 3. 常見的三欄式排版
+
+注意事項：
+* 於container外層增加 session 將底色改掉、換白字色及內距向內推
+      section.bg-info.py-5.text-white
 ```
      .container>.row>
         .col-md-4
@@ -56,8 +61,6 @@
             <h3>....</h3>
             <p>...</p>
 ```
-    * 於container外層增加 session 將底色改掉、換白字色及內距向內推
-      section.bg-info.py-5.text-white
 
 ## 4. 使用格線做混合式排版
 
