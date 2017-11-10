@@ -21,7 +21,7 @@
 
 ## 2. 製作滿版的背景圖及文字輪播
 
-注意事項：
+注意事項： 
 * Components > carousel 找語法
 * 用header包起來
 * 於carousel-item 增加 header-carousel-item
