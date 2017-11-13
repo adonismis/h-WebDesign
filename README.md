@@ -108,8 +108,59 @@
 ```
 
 ## 5. 充滿自由的 Flex 排版
+注意事項：
+* d-flex 
+
+```
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center my-3">如何這麼美味</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="d-flex">
+                        <div class="mr-3"><i class="text-info fa fa-4x fa-assistive-listening-systems" aria-hidden="true"></i></div>
+                        <div>
+                            <h3>紅襪挖角 對59轟重砲手沒興趣</h3>
+                            <p>波士頓紅襪希望能夠提升球隊的火力，看上響尾蛇隊的自由球員J.D. Martinez（馬丁尼茲），不過對於馬林魚重砲「怪力男」Giancarlo Stanton則是興致缺缺。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="d-flex">
+                        <div class="mr-3"><i class="text-info fa fa-4x fa-calculator" aria-hidden="true"></i></div>
+                        <div>
+                            <h3>紅襪挖角 對59轟重砲手沒興趣</h3>
+                            <p>波士頓紅襪希望能夠提升球隊的火力，看上響尾蛇隊的自由球員J.D. Martinez（馬丁尼茲），不過對於馬林魚重砲「怪力男」Giancarlo Stanton則是興致缺缺。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="d-flex">
+                        <div class="mr-3"><i class="text-info fa fa-4x fa-birthday-cake" aria-hidden="true"></i></div>
+                        <div>
+                            <h3>紅襪挖角 對59轟重砲手沒興趣</h3>
+                            <p>波士頓紅襪希望能夠提升球隊的火力，看上響尾蛇隊的自由球員J.D. Martinez（馬丁尼茲），不過對於馬林魚重砲「怪力男」Giancarlo Stanton則是興致缺缺。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="d-flex">
+                        <div class="mr-3"><i class="text-info fa fa-4x fa-binoculars" aria-hidden="true"></i></div>
+                        <div>
+                            <h3>紅襪挖角 對59轟重砲手沒興趣</h3>
+                            <p>波士頓紅襪希望能夠提升球隊的火力，看上響尾蛇隊的自由球員J.D. Martinez（馬丁尼茲），不過對於馬林魚重砲「怪力男」Giancarlo Stanton則是興致缺缺。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+```
 
 ## 6. 網頁上置放 Google Map 及表單
+
+
 
 ## 7. Bootstrap 簡易表單驗證
 
