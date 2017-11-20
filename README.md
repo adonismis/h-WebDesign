@@ -247,5 +247,34 @@
 
 ## 8. 格線系統及背景效果
 
+```
+
+    <section class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 p-4 bg-cover text-white" style="background-image:url(https://images.unsplash.com/photo-1481185103603-1dc844ef51db?dpr=2&auto=format&fit=crop&w=1080&h=718&q=80&cs=tinysrgb&crop=)">
+                <div class="row">
+                    <div class="col-md-9">
+                        <small>加入我們</small>
+                        <h3>亞冠賽／日本隊王牌今永昇太：王柏融肯定可以站穩日職</h3>
+                        <p>亞冠賽日本隊投手今永昇太，18日對中華隊6局狂飆12Ｋ，有「新台灣殺手」美名，他自己則是十分謙虛，認為這次比賽還有很多需要學習的地方，「亞冠賽每隊程度都很好，我們成長，相對的對手也成長，希望日本年輕球員能打出不服輸的棒球。」</p>
+                        <a href="#" class="btn btn-outline-warning">點選</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 p-4 bg-cover text-white" style="background-image:url(https://images.unsplash.com/photo-1498309313100-e308c8946b45?dpr=2&auto=format&fit=crop&w=1500&h=2250&q=80&cs=tinysrgb&crop=)">
+                <div class="row">
+                    <div class="col-md-9">
+                        <small>加入我們</small>
+                        <h3>亞冠賽／日本隊王牌今永昇太：王柏融肯定可以站穩日職</h3>
+                        <p>亞冠賽日本隊投手今永昇太，18日對中華隊6局狂飆12Ｋ，有「新台灣殺手」美名，他自己則是十分謙虛，認為這次比賽還有很多需要學習的地方，「亞冠賽每隊程度都很好，我們成長，相對的對手也成長，希望日本年輕球員能打出不服輸的棒球。」</p>
+                        <a href="#" class="btn btn-outline-warning">點選</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+```
+
 ## 9. 網頁中不同 Modal 互相切換的手法
 
