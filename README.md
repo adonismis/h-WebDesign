@@ -160,6 +160,90 @@
 
 ## 6. 網頁上置放 Google Map 及表單
 
+```
+    <style>
+         .form-control{
+            border-width:2px;
+        }
+    </style>
+
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3623.1950240095175!2d121.74897431500078!3d24.75450158410405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3467e4c364bd7dd3%3A0x2bd1e2ef01b06991!2z5paw5pyI5buj5aC0!5e0!3m2!1szh-TW!2stw!4v1510561993911" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+                <div class="col-md-6">
+                    <form action="#"  id="needs-validation" novalidate>
+                        <div class="form-group">
+                            <label for="username">姓名*</label>
+                            <input type="text" class="form-control" name="username" placeholder="請輸入姓名" required>
+                            <div class="invalid-feedback">
+                                請輸入姓名
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">電話*</label>
+                            <input type="tel" class="form-control" name="phone" placeholder="請輸入電話" required>
+                            <div class="invalid-feedback">
+                                請輸入電話
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="mail">E-mail*</label>
+                            <input type="email" class="form-control" name="mail" placeholder="請輸入E-mail" required>
+                            <div class="invalid-feedback">
+                                請輸入E-mail
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="number">人數</label>
+                            <input type="number" class="form-control" name="number" placeholder="請輸入人數" required>
+                            <div class="invalid-feedback">
+                                請輸入人數
+                            </div>
+                        </div>                       
+                        <div class="custom-controls-stacked">
+                            <label class="custom-control custom-radio">
+                                <input id="radioStacked3" name="radio-stacked" type="radio" class="custom-control-input" required>
+                                <span class="custom-control-indicator"></span>
+                                <span class="custom-control-description">需要素食</span>
+                            </label>
+                            <label class="custom-control custom-radio">
+                                <input id="radioStacked4" name="radio-stacked" type="radio" class="custom-control-input" required>
+                                <span class="custom-control-indicator"></span>
+                                <span class="custom-control-description">不需要素食</span>
+                            </label>
+                        </div>
+                        <div class="text-right">
+                            <button type="button" class="btn btn-secondary">取消</button>
+                            <button type="submit" class="btn btn-primary">送出</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function() {
+    'use strict';
+
+    window.addEventListener('load', function() {
+        var form = document.getElementById('needs-validation');
+        form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+            event.preventDefault();
+            event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+        }, false);
+    }, false);
+    })();
+    </script>
+
+```
 
 
 ## 7. Bootstrap 簡易表單驗證
