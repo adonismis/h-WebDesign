@@ -242,13 +242,11 @@
     }, false);
     })();
     </script>
-
 ```
 
 ## 8. 格線系統及背景效果
 
 ```
-
     <section class="container-fluid">
         <div class="row">
             <div class="col-md-6 p-4 bg-cover text-white" style="background-image:url(https://images.unsplash.com/photo-1481185103603-1dc844ef51db?dpr=2&auto=format&fit=crop&w=1080&h=718&q=80&cs=tinysrgb&crop=)">
@@ -273,8 +271,17 @@
             </div>
         </div>
     </section>
-
 ```
 
 ## 9. 網頁中不同 Modal 互相切換的手法
 
+
+## 10. 頁尾
+```
+    <footer class="bg-light py-5 mt-5">
+        <div class="container d-flex justify-content-between">
+                <div>© Copyright 2017 六角西餐廳</div>
+                <div><i class="fa fa-facebook-official" aria-hidden="true"></i></div>
+        </div>
+    </footer>
+```
