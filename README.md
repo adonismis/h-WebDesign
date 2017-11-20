@@ -276,6 +276,119 @@
 ## 9. 網頁中不同 Modal 互相切換的手法
 
 
+```
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <form action="#"  id="login-validation" novalidate>
+                    <div class="modal-header bg-primary text-white">
+                        <h5 class="modal-title" id="exampleModalLabel">登入</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">                
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">電子郵件</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="請輸入電子郵件" required>
+                            <small id="emailHelp" class="form-text text-muted">請輸入電子郵件</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">密碼</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="請輸入密碼" required>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input">
+                            記住我
+                            </label>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#" class="mr-auto" data-dismiss="modal" data-toggle="modal" data-target="#registerModal">切換到註冊</a>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+                        <button type="submit" class="btn btn-primary">送出</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <form action="#"  id="register-validation" novalidate>               
+                    <div class="modal-header bg-warning text-white">
+                        <h5 class="modal-title" id="exampleModalLabel">註冊</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h5>註冊六角西餐廳</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae consectetur eligendi nam, omnis suscipit culpa at consequatur est quam deserunt reprehenderit dolore magnam alias itaque odit quasi voluptas hic. Autem!</p>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">電子郵件</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="請輸入電子郵件" required>
+                                    <small id="emailHelp" class="form-text text-muted">請輸入電子郵件</small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">密碼</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="請輸入密碼" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">確認密碼</label>
+                                    <input type="password1" class="form-control" id="exampleInputPassword2" placeholder="請輸入確認密碼" required>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#" class="mr-auto" data-dismiss="modal" data-toggle="modal" data-target="#loginModal">切換到登入</a>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+                        <button type="submit" class="btn btn-warning">送出</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+```
+
+```
+<script>
+    (function() {
+    'use strict';
+
+    window.addEventListener('load', function() {
+
+        var loginform = document.getElementById('login-validation');
+        loginform.addEventListener('submit', function(event) {
+        if (loginform.checkValidity() === false) {
+            event.preventDefault();
+            event.stopPropagation();
+        }
+        loginform.classList.add('was-validated');
+        }, false);
+
+        var registerform = document.getElementById('register-validation');
+        registerform.addEventListener('submit', function(event) {
+        if (registerform.checkValidity() === false) {
+            event.preventDefault();
+            event.stopPropagation();
+        }
+        registerform.classList.add('was-validated');
+        }, false);
+
+    }, false);
+    })();
+</script>
+```
+
 ## 10. 頁尾
 ```
     <footer class="bg-light py-5 mt-5">
