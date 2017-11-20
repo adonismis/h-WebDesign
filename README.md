@@ -158,7 +158,7 @@
     </section>
 ```
 
-## 6. 網頁上置放 Google Map 及表單
+## 6. 網頁上置放 Google Map 及表單 &&　7. Bootstrap 簡易表單驗證
 
 ```
     <style>
@@ -244,9 +244,6 @@
     </script>
 
 ```
-
-
-## 7. Bootstrap 簡易表單驗證
 
 ## 8. 格線系統及背景效果
 
